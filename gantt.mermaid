@@ -1,0 +1,47 @@
+gantt
+    dateFormat  YYYY-MM-DD
+    title Healthcare App Development - Gantt Chart
+
+    section Initiation
+    Kickoff                    :active, 2025-03-01, 1w
+    Ready                      :2025-03-08, 1w
+
+    section Core Features
+    Med & Fitness              :2025-03-15, 2w
+    Medical Info               :2025-03-29, 2w
+
+    section Refinements
+    UI/UX & Security           :2025-04-12, 2w
+    System Enhance             :2025-04-26, 2w
+
+    section Beta & Testing
+    Payments                   :2025-05-10, 2w
+    Beta Testing               :2025-05-24, 2w
+
+    section Feedback & Final
+    User Feedback              :2025-06-07, 2w
+    Health Track               :2025-06-21, 2w
+    Final Release              :2025-07-05, 2w
+
+    section Milestones
+    Kickoff                    :milestone, 2025-03-01, 0d
+    Ready                      :milestone, 2025-03-08, 0d
+    Basic Features             :milestone, 2025-03-29, 0d
+    Emergency Ready            :milestone, 2025-04-19, 0d
+    UI Improvements            :milestone, 2025-05-03, 0d
+    System Enhanced            :milestone, 2025-05-17, 0d
+    Beta Release               :milestone, 2025-05-31, 0d
+    Launch Prep                :milestone, 2025-06-14, 0d
+    Feedback Integrated        :milestone, 2025-06-28, 0d
+    Tracking Enhanced          :milestone, 2025-07-12, 0d
+    Full Release               :milestone, 2025-07-19, 0d
+
+    section Dependencies
+    Medical Info               :after Med & Fitness, 2025-03-29, 2w
+    UI/UX & Security           :after Medical Info, 2025-04-12, 2w
+    System Enhance             :after UI/UX & Security, 2025-04-26, 2w
+    Payments                   :after System Enhance, 2025-05-10, 2w
+    Beta Testing               :after Payments, 2025-05-24, 2w
+    User Feedback              :after Beta Testing, 2025-06-07, 2w
+    Health Track               :after User Feedback, 2025-06-21, 2w
+    Final Release              :after Health Track, 2025-07-05, 2w
